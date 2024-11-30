@@ -24,11 +24,11 @@ body {
 }
 .grid {
   display: grid;
-  gap: 9.6rem;
-  grid-template-columns: repeat(2, 1fr);
+  gap: 9.6rem; /*pour l'espace */
+  /* grid-template-columns: repeat(3, 1fr); */
 }
 
-.grid--3cols {
+.grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
 }
 .section div div {
@@ -36,13 +36,35 @@ body {
   font-size: 50px;
   background-color: #333;
 }
+.heading-primary,
+.heading-secondary {
+  font-weight: 700;
+  color: #333;
+  color: #2e1907;
+  letter-spacing: -0.5px;
+}
 .heading-primary {
   font-size: 3.2rem;
-  font-weight: 700;
   line-height: 1.05;
-  color: #333;
-  letter-spacing: -0.5px;
+
   margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 3.1rem;
+  line-height: 1.2; /* la distance entre les ligne */
+  margin-bottom: 9.6rem;
+  color: #4d2a0c;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
 }
 .margin-right-sm {
   margin-right: 1.6rem !important;
@@ -179,10 +201,11 @@ body {
 /* ***************************************** */
 /* How it work section  */
 /* ***************************************** */
-.section {
+
+/* .section {
   padding: 9.6rem 0;
   background-color: orangered;
-}
+} */
 
 .section-produits {
   padding: 9.6rem 0;
@@ -192,17 +215,164 @@ body {
   font-size: 2.4rem;
   color: #333;
   font-weight: 600;
-  margin: 3.2rem;
+  margin-bottom: 3.2rem;
 }
 .produit-attributes {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 0.7rem;
 }
 .produit-attribute {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  /* text-align: center; */
 }
 .produit-img {
-  width: 90%;
+  width: 100%;
+}
+
+/* .produit-img2 {
+  width: 100%;
+  height: 30%;
+} */
+
+/* strong {
+  font-weight: 500;
+} */
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: rgb(204, 65, 201);
+  color: #333;
+  border-radius: 100px;
+  font-weight: 600;
+}
+.produit-tags {
+  margin-bottom: 1.2rem;
+}
+.produits {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden; /* t9wissa li f jnabe */
+  transition: all 0.4s;
+}
+
+.Produit-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+.center-text {
+  text-align: center;
+}
+.produits:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 2.4rem 6.4rem rgba(0, 0, 0, 0.075);
+}
+
+.btn-cmd {
+  background-color: #e67e22; /* Couleur orange */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+  margin-top: 7rem;
+  margin-left: 2.8rem;
+}
+
+.btn-cmd:hover {
+  background-color: orangered; /* Couleur orange plus foncée */
+}
+.Prix-centre {
+  text-align: center;
+  font-size: 1.7rem;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 5rem;
+}
+/* Footer */
+/* Grid  */
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+.footer {
+  padding: 2.8rem 0;
+  /* border-top: 1px solid #eee; */
+}
+.grid--footer {
+  grid-template-columns: 2fr 2fr;
+}
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+  width: 120px;
+}
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  text-align: center;
+  margin-top: 20px;
+}
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+.footer h3 {
+  margin-bottom: 10px;
+}
+.footer-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-form input,
+.footer-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.btn-sbmt {
+  background-color: #e67e22; /* Couleur orange */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 20px;
+  margin-left: 9rem;
+}
+.btn-sbmt:hover {
+  background-color: orangered; /* Couleur orange plus foncée */
+}
+.adresse {
+  margin-bottom: 2.4rem;
+}
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #777;
 }

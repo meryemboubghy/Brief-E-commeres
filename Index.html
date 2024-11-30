@@ -14,11 +14,13 @@
   </head>
   <body>
     <header class="header">
+      <a href="#">
       <img class="logo" alt="ShienBeauty logo" src="Img/Faces/logo1.png" />
-      <nav class="main-nav">
+    </a>
+      <nav class="main-nav"> 
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">Accueil</a></li>
-          <li><a class="main-nav-link" href="#">Produits</a></li>
+          <li><a class="main-nav-link"  onclick="voirProduits()" href="#">Produits</a></li>
           <li><a class="main-nav-link nav-cta" href="#">Contacte</a></li>
         </ul>
       </nav>
@@ -64,10 +66,10 @@
         </div>
       </section>
 
-      <section class="section-produits">
-        <div class="container">
+      <section class="section-produits" id="produits" >
+        <div class="container center-text">
           <span class="subheading">Produits</span>
-          <h2 class="heading secondary">
+          <h2 class="heading-secondary">
             Shien beauty sélectionne parmi plus de 5,000+ nuances et produits
             pour créer votre look parfait
           </h2>
@@ -75,26 +77,210 @@
         <div class="container grid grid--3-cols">
           <div class="produits">
             <img
-              src="Img/Produits/product.jpg"
+              src="Img/Procucts/ProdG4.jpg"
               class="produit-img"
               alt="Glose maroc"
             />
-            <span class="tag">les rouge a levre</span>
-            <p class="produit-title">Beauty Rose</p>
-            <ul class="produit-attributes">
-              <li class="produit-attribute">3 ml</li>
-              <li class="produit-attribute">Fini:Briallant</li>
-              <li class="produit-attribute">+80% Hydratation</li>
-              <li class="produit-attribute">Durée: 8 heures</li>
-              <li class="produit-attribute">Formule :Vegan</li>
-              <li class="produit-attribute">95/100 Score d'innocuité &reg;</li>
-              <li class="produit-attribute">Durée: 8 heures</li>
-            </ul>
+            <div class="Produit-content">
+              <div class="produit-tags">
+                <span class="tag">Lip Maximizer</span>
+              </div>
+              <ul class="produit-attributes">
+                <li class="produit-attribute">Couvrance légère</li>
+                <li class="produit-attribute"> Non Collant</li>
+                <li class="produit-attribute">
+                  <strong>+80%</strong> Hydratation
+                </li>
+                <li class="produit-attribute">
+                  <strong>95/100</strong> Score d'innocuité &reg;
+                </li>
+                <li class="Prix-centre">Prix :<strong>99 Dhs</strong></li>
+              </ul>
+              <button class="btn-cmd">Commander</button>
+            </div>
           </div>
+          <div class="produits">
+            <img
+              src="Img/Procucts/ProdR2.jpg"
+              class="produit-img"
+              alt="Glose maroc"
+            />
+            <div class="Produit-content">
+              <div class="produit-tags">
+                <span class="tag">Dior</span>
+              </div>
+
+              <!-- <p class="produit-title">Lancome</p> -->
+              <ul class="produit-attributes">
+                <li class="produit-attribute"><strong>3</strong>Color</li>
+                <li class="produit-attribute">Trio de teintes nude Color Riche</li>
+                <li class="produit-attribute">
+                  <strong>95/100</strong>Score d'innocuité &reg;
+                </li>
+                <li class="Prix-centre">Prix :<del>120 Dhs</del> Promo <strong>99 Dhs</strong></li>
+              </ul>
+              <button class="btn-cmd" onclick="commanderProduit()">Commander</button>
+            </div>
+          </div>
+          <div class="produits">
+            <img
+              src="Img/Procucts/prodR1.jpg"
+              class="produit-img"
+              alt="Glose maroc"
+            />
+            <div class="Produit-content">
+              <div class="produit-tags">
+                <span class="tag">MF.Net</span>
+              </div>
+              <!-- <p class="produit-title">Lancome</p> -->
+              <ul class="produit-attributes">
+                <li class="produit-attribute">Effet Mat Absolu</li>
+                <li class="produit-attribute">Brillant Fini</li>
+                <li class="produit-attribute">Vegan Formule</li>
+                <li class="produit-attribute">
+                  <strong>95/100</strong>Score d'innocuité &reg;
+                </li>
+              </li>
+              <li class="Prix-centre">Prix :<strong>97 Dhs</strong></li>
+            </ul>
+              </ul>
+              <button class="btn-cmd" onclick="commanderProduit()">Commander</button>
         </div>
+       </div>
+       <div class="produits">
+        <img
+          src="Img/Procucts/Beauty.jpg"
+          class="produit-img"
+          alt="Glose maroc"
+        />
+        <div class="Produit-content">
+          <div class="produit-tags">
+            <span class="tag">Beauty</span>
+          </div>
+          <!-- <p class="produit-title">Lancome</p> -->
+          <ul class="produit-attributes">
+            <li class="produit-attribute">Glose pour les lèvres </li>
+            <li class="produit-attribute">Briances miroir</li>
+            <li class="produit-attribute">
+              haute couvrance
+            </li>
+            <li class="produit-attribute">
+              <strong>95/100</strong>Score d'innocuité &reg;
+            </li>
+          </li>
+          <li class="Prix-centre">Prix :<strong>199 Dhs</strong></li>
+        </ul>
+          </ul>
+          <button class="btn-cmd" onclick="commanderProduit()">Commander</button>
+    </div>
+   </div>
+   <div class="produits">
+    <img
+      src="Img/Procucts/creme.jpg"
+      class="produit-img"
+      alt="Glose maroc"
+    />
+    <div class="Produit-content">
+      <div class="produit-tags">
+        <span class="tag">Neutrogena</span>
+      </div>
+      <!-- <p class="produit-title">Neutrogena</p> -->
+      <ul class="produit-attributes">
+        <li class="produit-attribute"><strong>55</strong>g</li>
+        <li class="produit-attribute"><strong>25</strong>FPS</li>
+        <li class="produit-attribute">
+          <strong>+80%</strong>Hydratation
+        </li>
+        <li class="produit-attribute">
+          <strong>95/100</strong>Score d'innocuité &reg;
+        </li>
+        <li class="Prix-centre">
+          Prix:<strong>220 Dhs</strong>
+        </li>
+      </ul>
+      <button class="btn-cmd" onclick="commanderProduit()">Commander</button>
+</div>
+</div>
+<div class="produits">
+  <img
+    src="Img/Procucts/ProdPack.jpg"
+    class="produit-img"
+    alt="Glose maroc"
+  />
+  <div class="Produit-content">
+    <div class="produit-tags">
+      <span class="tag">le rouge à levre</span>
+    </div>
+    <!-- <p class="produit-title">Lancome</p> -->
+    <ul class="produit-attributes">
+      <li class="produit-attribute"><strong>3</strong>ml</li>
+      <li class="produit-attribute">Brillant Fini</li>
+      <li class="produit-attribute">
+        <strong>+80%</strong>Hydratation
+      </li>
+      <li class="produit-attribute">
+        Durée :<strong>8heures</strong>
+      </li>
+      <li class="produit-attribute">Vegan Formule</li>
+      <li class="produit-attribute">
+        <strong>95/100</strong>Score d'innocuité &reg;
+      </li>
+    </ul>
+    <button class="btn-cmd button-container" onclick="commanderProduit()">Commander</button>
+</div>
+</div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container grid grid--3-cols">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img class="logo" alt="ShienBeauty logo" src="Img/Faces/logo1.png" />
+          </a>
+          <!-- <p class="footer-heading">Suivez-nous</p> -->
+          <ul class="social-links">
+                      <li>
+                        <a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></ion-icon></a>
+                      </li>
+                      <li>
+                        <a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a>
+                      </li>
+                      <li>
+                        <a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-linkedin"></ion-icon></a>
+                      </li>
+                     </ul>
+                     <br/>
+                     <p class="copyright">Copyright &copy; 2030 by ShienBeauty</p>
+                    </div>
+                    <div class="adresse">
+                      <p class="footer-heading">Contact-nous</p>
+                      <address class="contact">
+                        <p>Address : 42 boulevard abdelmoumen,Casablanca</p>
+            <p>
+              <a href="tel:+212 670-656-305">+212 670-656-305</a>
+              <a href="mailto:Sheinbeauty@gmail.com">Sheinbeauty@gmail.com</a>
+            </p>
+          </address>
+            </div>
+            <div class="footer-form">
+              <p class="footer-heading">Envoyez-nous un message</p>
+              <form action="/submit-contact" method="post">
+                  <input type="text" name="name" placeholder="Votre nom" required>
+                  <input type="email" name="email" placeholder="Votre email" required>
+                  <textarea name="message" placeholder="Votre message" rows="4" required></textarea>
+                  <button class="btn-sbmt" type="submit">Envoyer</button>
+              </form>
+          </div>
 
-    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                  
+ </div>
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="Script.js">
+      
+    </script>
   </body>
 </html>
